@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Major Mono Display', monospace;
+}
+
+#graphics-container {
+    width: 100vw;
+    height: 100vh;
+    line-height: 10px;
+    font-size: 10px;
+    color: white;
+    overflow: hidden;
+}
