@@ -39,3 +39,7 @@ h1{
 #cursor{
     font-size: 100px;
 }
+
+#tunnelCanvas{
+    background-color: black;
+}

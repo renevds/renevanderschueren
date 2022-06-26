@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Part 1-->
+<!--Part 1 Tunnel -->
 <div style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: row;">
     <canvas id="tunnelCanvas" style="position: absolute"></canvas>
-    <div style="position: absolute">
+    <div style="position: absolute;pointer-events: none;">
         <div style="text-align: center; margin-bottom: 100px;">
             <h1><span id="hello"></span><span id="cursor">|</span></h1>
         </div>
@@ -27,12 +27,13 @@
     </div>
 </div>
 
-<!--Part 2-->
+<!-- Water Part
 <div id="water-graphics-container">
 </div>
+-->
 
 <script src="js/hello.js"></script>
 <script src="js/tunnel.js"></script>
-<script src="js/water.js"></script>
+<!--<script src="js/water.js"></script>-->
 </body>
 </html>
