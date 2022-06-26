@@ -1,8 +1,8 @@
-const graphicsContainer = document.getElementById("graphics-container");
+const graphicsContainer = document.getElementById("water-graphics-container");
 const width = 100;
 const height = 60;
-const frameTime = 50;
-const frameSecondFraction = frameTime / 1000;
+const waterFrameTime = 50;
+const frameSecondFraction = waterFrameTime / 1000;
 const gravityPerFrame = 9.81 * frameSecondFraction / 10;
 const meterPerRow = 0.5;
 const obstacleVerticalTransferFactor = 0.5;
@@ -127,7 +127,7 @@ function printState() {
   for (let i = 0; i < height; i++) {
     for (let j = 0; j < width; j++) {
       const nr = state[j][height - 1 - i]
-      res += (nr === 1 ? "<span style='color: blue'>O</span>" : nr === 2 ? "X" : "&nbsp;")
+      res += (nr === 1 ? "<span style='color: #e31b6d'>O</span>" : nr === 2 ? "X" : "&nbsp;")
     }
     res += '<br>';
   }
@@ -144,11 +144,11 @@ for (let i = 0; i < 8; i++) {
 draw(30, height - 6, 50, 5, 1);
 draw(0, 1, width, 1, 2);
 
-function frame() {
+function runWaterFrame() {
   draw(0, 0, width, 1, 0);
   sim();
   printState();
 }
 
-frame();
-setInterval(frame, frameTime);
+runWaterFrame();
+//setInterval(frame, frameTime);

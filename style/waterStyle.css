@@ -1,0 +1,7 @@
+#water-graphics-container {
+    font-family: 'Major Mono Display', monospace;
+    line-height: 5px;
+    font-size: 10px;
+    color: white;
+    overflow: hidden;
+}

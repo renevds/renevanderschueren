@@ -1,0 +1,41 @@
+:root {
+    --accentRed: #e31b6d;
+    --bgBlue: #252835;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: var(--bgBlue);
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 55px;
+    margin: 0;
+}
+
+.accent-text{
+    color: var(--accentRed)
+}
+
+#hello {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--accentRed);
+}
+
+#cursor{
+    font-size: 100px;
+}

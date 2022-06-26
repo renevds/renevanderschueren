@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>René Van Der Schueren</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style/mainStyle.css">
+    <link rel="stylesheet" href="style/waterStyle.css">
+    <link rel="stylesheet" href="style/animationStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Raleway:wght@300;400;600&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="graphics-container">
+<!--Part 1-->
+<div style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: row;">
+    <canvas id="tunnelCanvas" style="position: absolute"></canvas>
+    <div style="position: absolute">
+        <div style="text-align: center; margin-bottom: 100px;">
+            <h1><span id="hello"></span><span id="cursor">|</span></h1>
+        </div>
+        <div style="text-align: center;">
+            <h1>I'm <span class="accent-text">René Van Der Schueren</span></h1>
+            <h1>freelance developer.</h1>
+        </div>
+    </div>
 </div>
-<script src="water.js"></script>
+
+<!--Part 2-->
+<div id="water-graphics-container">
+</div>
+
+<script src="js/hello.js"></script>
+<script src="js/tunnel.js"></script>
+<script src="js/water.js"></script>
 </body>
 </html>
