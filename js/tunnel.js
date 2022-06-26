@@ -14,7 +14,6 @@ function resizeCanvas() {
   canvas.height = window.innerHeight;
   ctx.resetTransform();
   ctx.translate(canvas.width / 2, canvas.height / 2);
-  drawTunnel();
 }
 
 resizeCanvas();

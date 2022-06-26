@@ -43,3 +43,8 @@ h1{
 #tunnelCanvas{
     background-color: black;
 }
+
+.comment{
+    color: #bdbdbd;
+    font-size: 16px;
+}
