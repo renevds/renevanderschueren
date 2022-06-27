@@ -2,6 +2,7 @@
     --accent: #0fb;
     --background: #313131;
     --betterWhite: #bdbdbd;
+    --lightGrey: #a2a2a2;
 }
 
 body::-webkit-scrollbar {
@@ -27,14 +28,14 @@ h1{
 
 .accent-text{
     color: var(--background);
-    background: white;
+    background-color: rgba(255, 255, 255, 0.8);
     line-height: 50px;
     font-weight: 600;
+    backdrop-filter: saturate(80%);
 }
 
 .comment{
     color: var(--betterWhite);
-    font-size: 13px;
-    font-family: Arial;
+    font-size: 16px;
     font-weight: bold;
 }

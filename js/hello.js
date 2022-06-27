@@ -14,10 +14,6 @@ const helloText = document.getElementById("hello");
 let word;
 const cursor = document.getElementById("cursor");
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 
 async function change() {
     index = index%hello.length;

@@ -16,27 +16,10 @@
     <script src="https://kit.fontawesome.com/84baf0b947.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--Part 1 Tunnel -->
-<div id="part1"
-     style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: row;">
-    <canvas id="tunnelCanvas" style="position: absolute"></canvas>
-    <div style="position: absolute;pointer-events: none;">
-        <div style="text-align: center; margin-bottom: 100px;">
-            <h1><span id="hello"></span><span id="cursor">|</span></h1>
-        </div>
-        <div style="text-align: center;">
-            <h1>I'm <span class="accent-text">RENÉ VAN DER SCHUEREN</span>,</h1>
-            <h1 style="font-size: 40px; color: var(--lightGrey)">Freelance Developer.</h1>
-        </div>
-    </div>
-    <div class="comment" style="position: absolute; left: 20px; top: 20px"> Try moving your mouse!</div>
-</div>
 
 <!-- Part 2-->
-<div id="part2" style="height: 100vh; display: flex; position: relative">
-    <div style="width: 40%; height: 100%;"></div>
+<div id="part2" style="height: 100vh; display: flex">
     <canvas id="donutCanvas"></canvas>
-    <div class="comment" style="position: absolute; right: 20px; top: 20px"> Swipe left-right to make the donut spin faster!</div>
 </div>
 
 <!-- Water Part
@@ -44,8 +27,6 @@
 </div>
 -->
 <script src="js/shared.js"></script>
-<script src="js/hello.js"></script>
-<script src="js/tunnel.js"></script>
 <script src="js/donut.js"></script>
 <!--<script src="js/water.js"></script>-->
 </body>
