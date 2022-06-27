@@ -1,0 +1,15 @@
+#hello {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+#cursor {
+    font-size: 100px;
+}
+
+#tunnelCanvas {
+    background-color: black;
+}

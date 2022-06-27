@@ -1,6 +1,7 @@
 :root {
-    --accentRed: #e31b6d;
-    --bgBlue: #252835;
+    --accent: #0fb;
+    --background: #313131;
+    --betterWhite: #bdbdbd;
 }
 
 body::-webkit-scrollbar {
@@ -10,7 +11,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: var(--bgBlue);
+    background-color: var(--background);
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -25,27 +26,15 @@ h1{
 }
 
 .accent-text{
-    color: var(--accentRed)
-}
-
-#hello {
-    text-transform: uppercase;
-    font-family: verdana;
-    font-size: 100px;
-    font-weight: 700;
-    color: var(--accentRed);
-}
-
-#cursor{
-    font-size: 100px;
-}
-
-#tunnelCanvas{
-    background-color: black;
+    color: var(--background);
+    background: white;
+    line-height: 50px;
+    font-weight: 600;
 }
 
 .comment{
-    color: #bdbdbd;
+    color: var(--betterWhite);
     font-size: 13px;
     font-family: Arial;
+    font-weight: bold;
 }

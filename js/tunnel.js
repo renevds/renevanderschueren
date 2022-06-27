@@ -3,15 +3,17 @@ const depth = 25;
 const partDelta = 1.2;
 const framesPerLevel = 14;
 let frame = 0;
-const tunnelFrameTime = 33;
+const tunnelFrameTime = 50;
 const canvas = document.getElementById("tunnelCanvas")
 const ctx = canvas.getContext('2d');
-let horDelta = 0;
-let verDelta = 0;
+const part1 = document.getElementById("part1");
+let horDelta = -0.5;
+let verDelta = -0.5;
 
 function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  console.log(part1.of)
+  canvas.width = part1.offsetWidth;
+  canvas.height = part1.offsetHeight;
   ctx.resetTransform();
   ctx.translate(canvas.width / 2, canvas.height / 2);
 }
@@ -69,7 +71,7 @@ function drawTunnel() {
     }
     for (let j = 0; j < inner.length; j++) {
       const jn = (j + 1) % inner.length;
-      ctx.fillStyle = '#252835';
+      ctx.fillStyle = '#313131';
       ctx.beginPath();
       ctx.moveTo(inner[j][0], inner[j][1]);
       ctx.lineTo(current[j][0], current[j][1]);
