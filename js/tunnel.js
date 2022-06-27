@@ -9,6 +9,8 @@ const tunnelCtx = tunnelCanvas.getContext('2d');
 const part1 = document.getElementById("part1");
 let horDelta = -0.5;
 let verDelta = -0.5;
+let fade = 1;
+const fadeMultiplier = 2;
 
 function resizeCanvas() {
   tunnelCanvas.width = part1.offsetWidth;
@@ -59,7 +61,6 @@ function drawTunnel() {
     }
     for (let j = 0; j < inner.length; j++) {
       const jn = (j + 1) % inner.length;
-      tunnelCtx.strokeStyle = "#1e1e1e";
       tunnelCtx.fillStyle = i === tunnelDepth - 1 ? "#1e1e1e" : '#313131';
       tunnelCtx.beginPath();
       tunnelCtx.moveTo(inner[j][0], inner[j][1]);
@@ -68,6 +69,9 @@ function drawTunnel() {
       tunnelCtx.lineTo(inner[jn][0], inner[jn][1]);
       tunnelCtx.closePath();
       tunnelCtx.fill();
+      tunnelCtx.strokeStyle = '#313131';
+      tunnelCtx.stroke();
+      tunnelCtx.strokeStyle = `rgba(30,30,30,${fade})`;
       tunnelCtx.stroke();
     }
     inner = current;
@@ -81,3 +85,8 @@ function drawTunnel() {
 drawTunnel();
 
 window.addEventListener('resize', resizeCanvas, false);
+document.addEventListener('scroll', function(e) {
+  const y = -window.scrollY*fadeMultiplier + tunnelCanvas.offsetHeight;
+  fade = Math.max(0, y/tunnelCanvas.height);
+  console.log(fade)
+})
