@@ -33,3 +33,22 @@
     justify-content: space-around;
     align-items: center;
 }
+
+#part1_bottom > img {
+    height: 50px;
+}
+
+#hello_container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+    #hello, #cursor {
+        font-size: 50px;
+    }
+
+    #hello_container{
+        margin-bottom: 50px;
+    }
+}

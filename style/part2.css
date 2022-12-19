@@ -1,3 +1,49 @@
 #part2{
     height: 90vh;
+    display: flex;
+}
+
+.job{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.job_title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.job_info{
+    font-weight: 600;
+}
+
+.job_info_entry{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+
+.job_info_entry > img{
+    margin-right: 4px;
+    height: 20px;
+}
+
+a{
+    color: var(--text);
+}
+
+@media (max-width: 576px) {
+    #part2{
+        height: 90vh;
+        display: block;
+    }
+
+    .job_info_entry{
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+    }
+
 }
