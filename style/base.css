@@ -1,8 +1,7 @@
 :root {
     --accent: #0fb;
-    --background: #313131;
-    --betterWhite: #bdbdbd;
-    --lightGrey: #a2a2a2;
+    --background: white;
+    --text: black;
 }
 
 body::-webkit-scrollbar {
@@ -27,15 +26,17 @@ h1{
 }
 
 .accent-text{
-    color: var(--background);
-    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text);
+    background-color: rgba(255, 255, 255, 1);
     line-height: 50px;
     font-weight: 600;
     backdrop-filter: saturate(80%);
 }
 
-.comment{
-    color: var(--betterWhite);
-    font-size: 16px;
-    font-weight: bold;
+.col_title{
+    color: var(--background);
+    background-color: var(--text);
+    line-height: 50px;
+    font-weight: 600;
+    backdrop-filter: saturate(80%);
 }

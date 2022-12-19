@@ -11,5 +11,25 @@
 }
 
 #tunnelCanvas {
-    background-color: #1e1e1e;
+    background-color: var(--text);
+    position: absolute;
+}
+
+#part1 {
+    color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#part1_bottom {
+    height: 10vh;
+    position: absolute;
+    top: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

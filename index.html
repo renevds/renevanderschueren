@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>René Van Der Schueren</title>
-    <link rel="stylesheet" href="style/mainStyle.css">
+    <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/waterStyle.css">
     <link rel="stylesheet" href="style/animationStyle.css">
     <link rel="stylesheet" href="style/part1.css">
     <link rel="stylesheet" href="style/part2.css">
+    <link rel="stylesheet" href="style/scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Raleway:wght@300;400;600&display=swap"
@@ -16,37 +17,44 @@
     <script src="https://kit.fontawesome.com/84baf0b947.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--Part 1 Tunnel -->
-<div id="part1"
-     style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: row;">
-    <canvas id="tunnelCanvas" style="position: absolute"></canvas>
+
+<div id="part1" class="row">
+    <canvas id="tunnelCanvas"></canvas>
     <div style="position: absolute;pointer-events: none;">
         <div style="text-align: center; margin-bottom: 100px;">
             <h1><span id="hello"></span><span id="cursor">|</span></h1>
         </div>
         <div style="text-align: center;">
             <h1>I'm <span class="accent-text">RENÉ VAN DER SCHUEREN</span>,</h1>
-            <h1 style="font-size: 40px; color: var(--lightGrey)">Freelance Developer.</h1>
+            <h1 style="font-size: 40px;">Freelance Full Stack Developer.</h1>
+        </div>
+        <div id="part_scroll">
+
         </div>
     </div>
-    <div class="comment" style="position: absolute; left: 20px; top: 20px"> Try moving your mouse!</div>
+    <div id="part1_bottom">
+        <a href="https://github.com/renevds"><img src="img/github.png" height="50"></a>
+
+        <div id="part1_scroll">
+            <div>
+                <div id="scroll_dot"></div>
+                <a href="#part2" id="scroll"></a>
+            </div>
+            Scroll
+        </div>
+
+        <a href="https://www.linkedin.com/in/renevanderschueren/"><img src="img/linkedin.png" height="50"></a>
+    </div>
 </div>
 
-<!-- Part 2-->
-<div id="part2" style="height: 100vh; display: flex; position: relative">
-    <div style="width: 40%; height: 100%;"></div>
-    <canvas id="donutCanvas"></canvas>
-    <div class="comment" style="position: absolute; right: 20px; top: 20px"> Swipe left-right to make the donut spin faster!</div>
+<div id="part2" class="row">
+    <div class="col">
+        <span class="col_title">Work Experience</span>
+    </div>
 </div>
 
-<!-- Water Part
-<div id="water-graphics-container">
-</div>
--->
 <script src="js/shared.js"></script>
 <script src="js/hello.js"></script>
 <script src="js/tunnel.js"></script>
-<script src="js/donut.js"></script>
-<!--<script src="js/water.js"></script>-->
 </body>
 </html>
